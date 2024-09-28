@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumenta Sueldo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section id="mainForm">
+        <h3>Industrias Stark</h3>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>Cédula</th>
+                <th>Sueldo Actual</th>
+                <th>Tipo de Empleado</th>
+                <th>Nuevo Sueldo</th>
+            </tr>
+        </table>
+        <h5>Total a pagar sólo por aumento de sueldo: $<span id="mainForm_lblTotalAumento">¿?</span></h5>
+        <h5>Porcentaje de personal obrero: <span id="mainForm_lblPorcentajeObrero">¿?</span>%</h5>
+        <button id="mainForm_btAgregarEmpleado">Agregar Empleado</button>
+    </section>
+
+    <section id="empleadoForm">
+        <h3>Datos del Empleado</h3>
+        <input type="text" id="empleadoForm_inCedula" placeholder="Cédula">
+        <input type="text" id="empleadoForm_inSueldo" placeholder="Sueldo Actual">
+        <input type="text" id="empleadoForm_inTipo" placeholder="Tipo de Empleado">
+        <p>Para el tipo de empleado: 1-Obrero , 2-Administrativo</p>
+        <button id="empleadoForm_btAceptar">Aceptar</button>
+    </section>
+</body>
+<script type="module">
+    import {Cl_controlador} from "./JS/Cl_Controlador.js";
+    new Cl_controlador();
+</script>
+
+</html>
